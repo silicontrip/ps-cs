@@ -1,15 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">                                                                                               
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>source</AssemblyName>
-  </PropertyGroup>
+<PropertyGroup Condition=" '$(os)' == 'Windows_NT' ">                                                                           
+  <TargetFramework>net48</TargetFramework>                                                                              
+    <AssemblyName>net.ninebroadcast</AssemblyName>                                                                              
+</PropertyGroup>                                                                                                                
+
+<PropertyGroup Condition=" '$(os)' == 'Unix' ">                                                                                 
+        <TargetFramework>netstandard2.0</TargetFramework>                                                                       
+        <AssemblyName>net.ninebroadcast</AssemblyName>                                                                          
+</PropertyGroup>                                                                                                                
+
+  <PropertyGroup>                                                                                                               
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>                                                                          
+  </PropertyGroup>                                                                                                                
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
-    <PackageReference Include="PowerShellStandard.Library" Version="5.1.0-preview-06">
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
+    <PackageReference Include="microsoft.powershell.5.referenceassemblies" Version="1.1.0" />
+  </ItemGroup>                                                                                                              
 
-</Project>
+                                                                                                          
+
+</Project> 
