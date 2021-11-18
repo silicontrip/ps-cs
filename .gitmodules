@@ -1,0 +1,12 @@
+[submodule "SyncFiles"]
+	path = SyncFiles
+	url = ./SyncFiles
+[submodule "DiskUsage"]
+	path = DiskUsage
+	url = ./DiskUsage
+[submodule "Ed"]
+	path = Ed
+	url = ./Ed
+[submodule "Less"]
+	path = Less
+	url = ./Less
