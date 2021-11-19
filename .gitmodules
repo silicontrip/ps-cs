@@ -10,3 +10,6 @@
 [submodule "Less"]
 	path = Less
 	url = ./Less
+[submodule "Diskusage"]
+	path = Diskusage
+	url = ./Diskusage
