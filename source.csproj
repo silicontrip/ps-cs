@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">                                                                                               
+
+<PropertyGroup Condition=" '$(os)' == 'Windows_NT' ">                                                                           
+  <TargetFramework>net48</TargetFramework>                                                                              
+    <AssemblyName>net.ninebroadcast</AssemblyName>                                                                              
+</PropertyGroup>                                                                                                                
+
+<PropertyGroup Condition=" '$(os)' == 'Unix' ">                                                                                 
+        <TargetFramework>netstandard2.0</TargetFramework>                                                                       
+        <AssemblyName>net.ninebroadcast</AssemblyName>                                                                          
+</PropertyGroup>                                                                                                                
+
+  <PropertyGroup>                                                                                                               
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>                                                                          
+  </PropertyGroup>                                                                                                                
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.powershell.5.referenceassemblies" Version="1.1.0" />
+  </ItemGroup>                                                                                                              
+
+                                                                                                          
+
+</Project> 
